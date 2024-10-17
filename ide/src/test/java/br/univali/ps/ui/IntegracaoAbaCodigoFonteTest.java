@@ -100,9 +100,9 @@ public class IntegracaoAbaCodigoFonteTest extends AssertJSwingJUnitTestCase {
     @SuppressWarnings("unchecked")
     private int getLinhaVariavel(DefaultMutableTreeNode root, String variavel) 
     {
-        Enumeration<DefaultMutableTreeNode> e = root.depthFirstEnumeration();
+        Enumeration<?> e = root.depthFirstEnumeration();
         while (e.hasMoreElements()) {
-            DefaultMutableTreeNode node = e.nextElement();
+            DefaultMutableTreeNode node = (DefaultMutableTreeNode) e.nextElement();
             NoDeclaracaoBase declaracao = (NoDeclaracaoBase)node.getUserObject();
             if (declaracao.getNome().equalsIgnoreCase(variavel)) {
                 return node.getLevel() - 1;

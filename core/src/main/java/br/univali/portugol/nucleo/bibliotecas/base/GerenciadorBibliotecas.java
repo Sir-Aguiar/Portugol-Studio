@@ -61,6 +61,7 @@ public final class GerenciadorBibliotecas
         {
             bibliotecasDisponiveis = new ArrayList<>();
             bibliotecasDisponiveis.add("Util");
+            bibliotecasDisponiveis.add("Vetores");
             bibliotecasDisponiveis.add("Graficos");
             bibliotecasDisponiveis.add("Matematica");
             bibliotecasDisponiveis.add("Teclado");
